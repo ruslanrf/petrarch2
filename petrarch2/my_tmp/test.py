@@ -1,7 +1,8 @@
 import time
 import logging
 import pprint
-
+import json
+import requests
 import sys
 
 sys.path.append('../petrarch2')
@@ -88,4 +89,15 @@ def extract_event_1():
     print ('=====   =====')
     # PETRwriter.write_events(updated_events, 'evts.' + out_file)
 
-extract_event_1()
+#extract_event_1()
+
+def hypnos_parse():
+    headers = {'Content-Type': 'application/json'}
+    data = {'text': "At least 37 people are dead after Islamist radical group Boko Haram assaulted a town in northeastern Nigeria.", 'id': 'abc123', 'date': '20010101'}
+    data = json.dumps(data)
+    r = requests.get('http://localhost:5002/hypnos/extract', data=data,  headers=headers)
+    output = r.json()
+    pp = pprint.PrettyPrinter(indent=4)
+    pp.pprint(output)
+    
+hypnos_parse()
