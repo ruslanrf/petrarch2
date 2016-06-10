@@ -81,6 +81,10 @@ def extract_event_1():
     if not s_parsed:
         events = stanford_parse(events)
 
+    print ('PARSED INPUT 2:')
+    pp.pprint (events)
+    print ('=====   =====')
+
     # out = ""  # PETRglobals.EventFileName
     out = 'test.out.txt'
     updated_events = petrarch2.do_coding(events, out)
