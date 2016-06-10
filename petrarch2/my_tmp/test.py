@@ -5,8 +5,8 @@ import json
 import requests
 import sys
 import sys
-sys.path.insert(0, '../')
-#sys.path.append('../petrarch2')
+#sys.path.insert(0, '../')
+sys.path.append('../petrarch2')
 import petrarch2
 
 sys.path.append('../utilities')
@@ -110,7 +110,7 @@ def stanford_parse(event_dict):
     print("\nSetting up StanfordNLP. The program isn't dead. Promise.")
     logger.info('Setting up StanfordNLP')
     core = corenlp.StanfordCoreNLP(PETRglobals.stanfordnlp,
-                                   properties=_get_data('data/config/',
+                                   properties=utilities._get_data('data/config/',
                                                         'petrarch.properties'),
                                    memory='2g')
     total = len(list(event_dict.keys()))
