@@ -4,8 +4,7 @@ import pprint
 import json
 import requests
 import sys
-import sys
-#sys.path.insert(0, '../')
+sys.path.insert(0, '../')
 sys.path.append('../petrarch2')
 import petrarch2
 
@@ -142,7 +141,7 @@ def stanford_parse(event_dict):
                         sent_dict['coref'] = stanford_result['coref']
 
                     # TODO: To go backwards you'd do str.replace(' ) ', ')')
-                    sent_dict['parsed'] = _format_parsed_str(s_parsetree)
+                    sent_dict['parsed'] = utilities._format_parsed_str(s_parsetree)
                 except Exception as e:
                     print('Something went wrong. See log file.')
                     logger.warning(
