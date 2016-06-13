@@ -1,8 +1,28 @@
 <Sentences>
-  <Sentence date = "20080804" id ="AFP0808020625_4" source = "AFP" sentence = "True">
-  <Text>
-  The stopover came as the US leader prepared to attend the Beijing Olympics, an 
-  event which will test his vow to keep politics out of the Games. 
-  </Text>
-  </Sentence>
+<Sentence date = "20080804" id ="AFP0808020625_4" source = "AFP" sentence = "True">
+<Text>
+The stopover came as the US leader prepared to attend the Beijing Olympics, an 
+event which will test his vow to keep politics out of the Games. 
+</Text>
+<Parse>
+( (S 
+(NP (DT The) (NN stopover)) 
+(VP (VBD came) (SBAR (IN as) (S 
+(NP (DT the) (NNP US) (NN leader)) 
+(VP (VBD prepared) (S 
+(VP (TO to) 
+(VP (VB attend) 
+(NP (NP (DT the) (NNP Beijing) (NNP Olympics)) (, ,) 
+(NP (NP (DT an) (NN event)) (SBAR (WHNP (WDT which)) (S 
+(VP (MD will) 
+(VP (VB test) 
+(NP (PRP$ his) (NN vow) (S 
+(VP (TO to) 
+(VP (VB keep) 
+(NP (NNS politics)) 
+(PP (IN out) 
+(PP (IN of) 
+(NP (DT the) (NNPS Games))))))))))))))))))))) (. .)))
+</Parse>
+</Sentence>
 </Sentences>
