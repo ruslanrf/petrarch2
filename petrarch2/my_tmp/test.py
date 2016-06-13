@@ -4,7 +4,7 @@ import pprint
 import json
 import requests
 import sys
-sys.path.insert(0, '../')
+#sys.path.insert(0, '../')
 sys.path.append('../petrarch2')
 import petrarch2
 
