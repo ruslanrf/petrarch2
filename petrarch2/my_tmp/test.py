@@ -70,7 +70,7 @@ def extract_event_1():
 
     pp = pprint.PrettyPrinter(indent=4)
 
-    s_parsed = True
+    s_parsed = False
     events = PETRreader.read_xml_input(params['paths'], s_parsed)
 
     print ('PARSED INPUT:')
